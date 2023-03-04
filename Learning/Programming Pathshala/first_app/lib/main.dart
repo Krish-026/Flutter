@@ -1,4 +1,8 @@
+import 'package:first_app/Wednesday_18.dart';
+import 'package:first_app/monday_23.dart';
 import 'package:flutter/material.dart';
+
+import 'Friday20.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,51 +18,34 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const DashBoard(),
+      home:Monday23A(),
     );
   }
 }
 
-class DashBoard extends StatelessWidget {
-  const DashBoard({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('DashBoard'),
-      ),
-      body: Center(
-        child: Column(
-          children: [
-            Center(
-              child: Container(
-                height: 300,
-                width: 300,
-                color: Colors.blue,
-                child: Center(
-                    child: Text('Text Family',
-                        style: TextStyle(
-                            fontFamily: 'KrishnaFamily',
-                            fontSize: 25,
-                            fontWeight: FontWeight.w900))),
-              ),
-            ),
-            SizedBox(height: 10),
-            ElevatedButton(
-              onPressed: () {
-                debugPrint("Click Me!");
-              },
-              child: Text('Click Here!'),
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          debugPrint("Float Click");
-        },
-        child: Text("+"),
-      ),
-    );
-  }
-}
+
+
+// void main(){
+//   // Thursday 19 , Map
+//   // Map -> key and value pair
+
+//   Map<int, String> myStringMap = Map(); // new Map()
+//   myStringMap.addAll({6: 'Abce', 3 : 'Vishal'}); // Key Value pair
+//   myStringMap[1] = 'Krishna';
+//   print(myStringMap[1]);
+//   // myStringMap.entries(); will take another map, it is iterable
+
+
+// }
+
+
+
+
+
+
+
+// Stateful Widgets
+
+
+
+
